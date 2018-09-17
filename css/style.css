@@ -1,0 +1,29 @@
+#logo {
+	font-size: 100%;
+	font-family: Verdana, Arial, Sans-Serif;
+	letter-spacing: 0,15 em;
+	background-color: #ffe59e;
+	text-align: center;
+}
+
+ul{
+	padding: 15px;
+	margin: 0px auto 0px auto;
+	border-top: 2px solid #000;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
+li{
+	display: inline;
+	margin: 0px 3px;
+}
+a{
+	color: #000000;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 18px 18px 18px 18px;
+}
+a:hover, a.on{
+	color: #cc3333;
+	background-color: #ffffff;
+}
