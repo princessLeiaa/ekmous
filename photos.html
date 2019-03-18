@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/gallery.css">
+  
+</head>
+
+<body background="images\fonto.jpg">
+	<div class="wrapper">
+
+		<div id="logo">
+			<img src='images\logo.png'/>
+		</div>
+		<!--logo-->
+		<ul id="navigation">
+			<li><a href="index.html"> Αρχική Σελίδα </a> </li>
+			<li><a href="ksenagiseis.html"> Ξεναγήσεις </a> </li>
+			<li><a href="poioi_eimaste.html"> Ποιοί Είμαστε </a> </li>
+			<li><a href="epikoinonia.html"> Επικοινωνία </a> </li>
+			<li><a href="#"> Φωτογραφίες </a> </li>
+		</ul>
+		<!--navigation-->
+
+	<!-- Images used to open the lightbox -->	
+	<div class="row">
+		<div class="column hover-shadow">
+			<img src="images/photos/1.jpg" alt="Άλσος Καισαριανής" onclick="openModal();currentSlide(1)" id="picture">
+		</div>
+		<div class="column hover-shadow">
+			<img src="images/photos/2.jpg" alt="Άλσος Καισαριανής" onclick="openModal();currentSlide(2)" id="picture">
+		</div>
+		<div class="column hover-shadow">
+			<img src="images/photos/3.jpg" alt="Καπνικαρέα" onclick="openModal();currentSlide(3)" id="picture">
+		</div>
+		<div class="column hover-shadow">
+			<img src="images/photos/3.jpg" alt="Καπνικαρέα" onclick="openModal();currentSlide(4)" id="picture" >
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="column hover-shadow">
+			<img src="images/photos/5.jpg" alt="Άλσος Καισαριανής" onclick="openModal();currentSlide(5)" id="picture">
+		</div>
+		<div class="column hover-shadow">
+			<img src="images/photos/6.jpg" alt="Άλσος Καισαριανής" onclick="openModal();currentSlide(6)" id="picture">
+		</div>
+		<div class="column hover-shadow">
+			<img src="images/photos/7.jpg" alt="Καπνικαρέα" onclick="openModal();currentSlide(7)" id="picture">
+		</div>
+		<div class="column hover-shadow">
+			<img src="images/photos/8.jpg" alt="Καπνικαρέα" onclick="openModal();currentSlide(8)" id="picture">
+		</div>
+	</div>
+	<div class="row">
+		<div class="column hover-shadow">
+			<img src="images/photos/9.jpg" alt="Άλσος Καισαριανής" onclick="openModal();currentSlide(9)" id="picture">
+		</div>
+		<div class="column hover-shadow">
+			<img src="images/photos/10.jpg" alt="Άλσος Καισαριανής" onclick="openModal();currentSlide(10)" id="picture">
+		</div>
+		
+	</div>
+
+	<!-- The Modal/Lightbox -->
+	<div id="myModal" class="modal" background="images\fonto.jpg">
+		<span class="close cursor" onclick="closeModal()">&times;</span>
+		<div class="modal-content">
+
+			<div class="mySlides">
+				<div class="numbertext">1 / 10</div>
+					<img src="images/photos/1.jpg" style="height:100%" id="picture">
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">2 / 10</div>
+				<img src="images/photos/2.jpg" style="height:100%" id="picture">
+			</div>
+			
+			<div class="mySlides">
+				<div class="numbertext">3 / 10</div>
+				<img src="images/photos/3.jpg" style="height:100%" id="picture">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">4 / 10</div>
+				<img src="images/photos/3.jpg" style="height:100%" id="picture">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">5 / 10</div>
+				<img src="images/photos/5.jpg" style="height:100%" id="picture">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">6 / 10</div>
+				<img src="images/photos/6.jpg" style="height:100%" id="picture">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">7 / 10</div>
+				<img src="images/photos/7.jpg" style="height:100%" id="picture">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">8 / 10</div>
+				<img src="images/photos/8.jpg" style="height:100%" id="picture">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">9 / 10</div>
+				<img src="images/photos/9.jpg" style="height:100%" id="picture">
+			</div>
+			<div class="mySlides">
+				<div class="numbertext">10 / 10</div>
+				<img src="images/photos/10.jpg" style="height:100%" id="picture">
+			</div>
+		</div>
+
+		<!-- Next/previous controls -->
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		<!-- Caption text -->
+    <div class="caption-container">
+				<p id="caption"></p>
+		</div>
+		<!-- Thumbnail image controls -->
+		<div class="column">
+			<img class="demo" src="images/photos/1.jpg" id="picture" onclick="currentSlide(1)" alt="Άλσος Καισαριανής">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/photos/2.jpg" id="picture" onclick="currentSlide(2)" alt="Άλσος Καισαριανής">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/photos/3.jpg" id="picture" onclick="currentSlide(3)" alt="Καπνικαρέα">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/photos/3.jpg" id="picture" onclick="currentSlide(4)" alt="Καπνικαρέα">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/photos/5.jpg" id="picture" onclick="currentSlide(5)" alt="dono">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/photos/6.jpg" id="picture" onclick="currentSlide(6)" alt="Μουσείο Γουναρόπουλου">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/photos/7.jpg" id="picture" onclick="currentSlide(7)" alt="Μουσείο Γουναρόπουλου">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/photos/8.jpg" id="picture" onclick="currentSlide(8)" alt="Ναός Διός">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/photos/9.jpg" id="picture" onclick="currentSlide(9)" alt="Θέατρο Διονύσου">
+		</div>
+		<div class="column">
+			<img class="demo" src="images/photos/10.jpg" id="picture" onclick="currentSlide(10)" alt="Θέατρο Διονύσου">
+		</div>
+
+	</div>
+</div>
+	<!--wrapper-->
+	<footer>
+		<div id="copyright">
+			Copyright © 2018. All rights reserved
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/lightbox.js"></script>
+</body>
+
+</html>
