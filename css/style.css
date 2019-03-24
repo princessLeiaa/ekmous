@@ -38,6 +38,56 @@
   
 }
 
+.animation-wrapper{
+	height: 44vw;
+	overflow: hidden;
+	border: 4px double #000;
+	background-color: rgba(255, 255, 230,0.5);
+	display: flex;
+	flex-flow: row wrap;
+	text-align: center;
+	align-items: center;
+	justify-content: space-around;
+	max-width: 100%;
+	margin: 2vw auto 1vw auto;
+}
+
+.animated-photo{
+	max-width: 100%;
+	position: relative;
+	animation-name: motion;
+	animation-duration: 5s;
+	top: -44vw;
+}
+
+@keyframes motion {
+	0%   {top:0vw;} 
+	100% {top:-44vw;}
+}
+
+.button {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: #ffffcc;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 7px #999;
+}
+
+.button:hover {background-color: #ffff99}
+
+.button:active {
+  background-color: #ff9966;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
 .aside{
 	max-width: 400px;
 	min-height: 300px;
@@ -54,6 +104,11 @@ form{
 .padded{
 	padding: 0 50px;
 	margin: 25px;
+}
+
+.center{
+	margin: auto;
+	width: 140px;
 }
 
 
